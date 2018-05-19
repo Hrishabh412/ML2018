@@ -1,0 +1,25 @@
+#!/usr/bin/python3
+import sklearn
+from sklearn import tree
+#apple & orange --texture,weight
+#smooth=0  , weight=1
+
+Features=[[110,0],[120,0],[130,1],[140,1]]
+
+
+output=["apple","apple","orange","orange"]
+
+#now loading decision tree classifier
+
+algo=tree.DecisionTreeClassifier()
+
+#now training the features and output
+
+trained=algo.fit(features,output)
+
+#generaly looking for 1 core
+#testing trained model
+
+resoutput=trained.predict([[110,0]])
+
+print(resouput)
