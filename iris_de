@@ -1,0 +1,18 @@
+#!/usr/bin/python3
+
+import time
+#import matplotlib.pyplot as plt
+from sklearn.datasets import load_iris
+
+import numpy as np
+
+
+iris=load_iris()
+
+x=[0,50,100]
+#removing exactly one data from each other
+
+train_target=np.delete(iris.data,x)
+train_target=np.delete(iris.target,x)
+
+print(train_target.size)
