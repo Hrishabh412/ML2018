@@ -29,9 +29,6 @@ trained=algo.fit(features,output)
 #generaly looking for 1 core
 #testing trained model
 
-
-
-
 resoutput=trained.predict([[w,out]])
 
 print(resoutput)
