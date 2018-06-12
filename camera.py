@@ -9,7 +9,7 @@ cam=cv2.VideoCapture(0)
 
 while cam.isOpened():
 	print("working")
-	#x,y=ca.read()
+	#x,y=cam.read()
 	status,frame=cam.read()
 	gray=cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
 	hsv=cv2.cvtColor(frame,cv2.COLOR_BGR2HSV)
